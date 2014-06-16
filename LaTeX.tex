@@ -14,6 +14,7 @@
 \usepackage{hyperref}
 \usepackage[english]{babel}
 \usepackage{times}
+\usepackage{mathtools}
 \usepackage[T1]{fontenc}
 
 
@@ -87,14 +88,51 @@ u\_n\textbackslash underset\{n\textbackslash to+\textbackslash infty\}\{\textbac
     \\
     texte au dessus d'une flèche :\\
     u\_n\textbackslash overset\{n\textbackslash to+\textbackslash infty\}\{\textbackslash longrightarrow\}\textbackslash ell
-    $u_n\overset{n\to+\infty}{\longrightarrow}\ell$
+$u_n\overset{n\to+\infty}{\longrightarrow}\ell\\
+a \xleftrightarrow[under]{over} b\\
+A \xLeftarrow[under]{over} B\\
+B \xRightarrow[under]{over} C\\
+%
+C \xLeftrightarrow[under]{over} D\\
+%
+D \xhookleftarrow[under]{over} E\\
+%
+E \xhookrightarrow[under]{over} F\\
+%
+F \xmapsto[under]{over} G\\
+%
+H \xrightharpoondown[under]{over} I\\
+%
+I \xrightharpoonup[under]{over} J\\
+%
+J \xleftharpoondown[under]{over} K\\
+%
+K \xleftharpoonup[under]{over} L\\
+%
+L \xrightleftharpoons[under]{over} M\\
+%
+M \xleftrightharpoons[under]{over} N
+$
 \section{Logique}
+$\forall
+\exists$
 
 \section{Comparateur}
 
 \section{Géométrie}
 
 \section{Graphe}
-
+Graphe
+Arbre
 \section{Faire une énumération}
+
+\section{\'Ecrire une équation}
+définie en plusieurs morceaux :\\
+$
+u(x) =
+\begin{cases}
+\exp{x} & \text{if } x \geq 0 \\
+1 & \text{if } x < 0
+\end{cases}
+$
 \end{document}

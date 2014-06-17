@@ -16,7 +16,7 @@
 \usepackage{times}
 \usepackage{mathtools}
 \usepackage[T1]{fontenc}
-
+\usepackage{rotating}
 
 
 
@@ -46,6 +46,41 @@
 
 
 \LaTeX permet à l'auteur de ne pas s'inquiéter de l'apparence de son document et de se concentrer sur le fond et non la forme. Cependant, \LaTeX est principalement utilisé pour des publications scientifiques. Il faut ainsi souvent connaître les codes pour faire certaines formules. C'est pourquoi nous avons commencé un projet qui consiste à recenser tous les codes intéressants et à permettre une recherche rapide dans ce document.
+\section{Couleur, alignement}
+
+\section{rotation}
+nécessite \textbackslash usepackage\{rotating\}
+\begin{turn}{30}
+toto
+\end{turn}
+\section{Faire une énumération}
+\begin{itemize}
+\item The first item
+\item The second item
+\item The third\ldots
+\end{itemize}
+
+\begin{enumerate}
+\item The first item
+\item The second item
+\item The third\ldots
+\end{enumerate}
+
+\begin{description}
+\item[First] The first item
+\item[Second] The second item
+\item[Third] The third\ldots
+\end{description}
+
+\begin{description}
+\item[First] \hfill \\
+The first item
+\item[Second] \hfill \\
+The second item
+\item[Third] \hfill \\
+The third\ldots
+\end{description}
+\section{Tableau}
 
 \section{Lettres}
 Lettre double barre (Set) : \$\textbackslash mathbb\{Lettre\}\$ :\\
@@ -124,7 +159,7 @@ $\forall
 \section{Graphe}
 Graphe
 Arbre
-\section{Faire une énumération}
+
 
 \section{\'Ecrire une équation}
 définie en plusieurs morceaux :\\
@@ -135,4 +170,6 @@ u(x) =
 1 & \text{if } x < 0
 \end{cases}
 $
+\section{Faire une bibliographie}
+
 \end{document}

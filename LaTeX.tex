@@ -17,7 +17,7 @@
 \usepackage{mathtools}
 \usepackage[T1]{fontenc}
 \usepackage{rotating}
-
+\usepackage{tikz,tkz-tab}
 
 
 
@@ -81,6 +81,14 @@ The second item
 The third\ldots
 \end{description}
 \section{Tableau}
+Tableau de Variation :\\
+nécessite \textbackslash usepackage\{tikz,tkz-tab\}\\
+\begin{tikzpicture}
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$, $1$, $e$}
+\tkzTabLine{d,-,z,+}
+\tkzTabVar{D+/$1$,-/$-1$,+/$3$}
+\tkzTabVal{1}{2}{0.5}{$a$}{$0$}
+\end{tikzpicture}
 
 \section{Lettres}
 Lettre double barre (Set) : \$\textbackslash mathbb\{Lettre\}\$ :\\
